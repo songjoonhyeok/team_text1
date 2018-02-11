@@ -19,7 +19,7 @@ html,body{width:100%; height:100%; background-color: #eaeaea;}
 
 header{width:100%; outline:1px red solid; position:relative;}
   nav{ position:fixed; width:100%; z-index: 8500;
-    h1{outline:1px red solid; background-image:url(../img/123123.png); width:105px; height:95px;}
+    h1{background-image:url(../img/123123.png); width:105px; height:95px;}
     .category{
       .menu {position: relative; text-align:left;margin: 0;
          ul {margin: 0;padding: 0; }
@@ -86,15 +86,10 @@ header{width:100%; outline:1px red solid; position:relative;}
                 }
                     }
 
-     .slider-info {
-        padding: 2% 10%; }
-
-    .slider-height {
-      height: 100%; }
-      .slider-height .slider-wrapper {
-        height: 100%; }
-      .slider-height .slides {
-        height: 100%; }
+     .slider-info {padding: 2% 10%; }
+    .slider-height{height: 100%; }
+      .slider-height .slider-wrapper {height: 100%; }
+      .slider-height .slides {height: 100%; }
         .slider-height .slides li {
           height: 100%; }
 
@@ -103,10 +98,32 @@ header{width:100%; outline:1px red solid; position:relative;}
       border: 0;
       margin: 0;
       overflow: hidden; }
+   //버튼 작업 해야함//
+    .flex-direction-nav{
+      .flex-nav-prev{box-sizing: border-box;
+        a{left:-50px;}
+        }
+      .flex-nav-next{box-sizing: border-box;
+        a{right:0px; text-align: right;isplay: block;width: 40px;
+      height: 40px;
+      margin: -20px 0 0;
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      overflow: hidden;
+      opacity: 0;
+      cursor: pointer;
+      color: rgba(0, 0, 0, 0.8);
+      text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;}
+      }
 
-    .flex-direction-nav a {
-      line-height: 40px; }
-
+     a {outline:1px red solid; line-height: 40px; }
+        }
     .slider-info {
       position: absolute;
       top: 25%;
@@ -166,4 +183,5 @@ header{width:100%; outline:1px red solid; position:relative;}
 
     .slider-2 .slider-info {
       top: 35%; }
+
   }

@@ -62,7 +62,6 @@ nav {
   z-index: 8500;
 }
 nav h1 {
-  outline: 1px red solid;
   background-image: url(../img/123123.png);
   width: 105px;
   height: 95px;
@@ -279,7 +278,38 @@ section .slider-wrapper {
   margin: 0;
   overflow: hidden;
 }
+section .flex-direction-nav .flex-nav-prev {
+  box-sizing: border-box;
+}
+section .flex-direction-nav .flex-nav-prev a {
+  left: -50px;
+}
+section .flex-direction-nav .flex-nav-next {
+  box-sizing: border-box;
+}
+section .flex-direction-nav .flex-nav-next a {
+  right: 0px;
+  text-align: right;
+  isplay: block;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 section .flex-direction-nav a {
+  outline: 1px red solid;
   line-height: 40px;
 }
 section .slider-info {
